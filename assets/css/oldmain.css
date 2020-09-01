@@ -1,0 +1,92 @@
+#heading {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+    font-family: sans-serif;
+    margin: 10px auto;
+    padding: 20px;
+}
+#drop-area.highlight {
+    border-color: purple;
+}
+
+.my-form {
+    margin-bottom: 10px;
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* .infoWrapper p {
+    text-align: center;
+
+} */
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+
+/*
+    Hide choose file button
+*/
+#fileElem {
+    display: none;
+}
+
+#convertButtonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#convertButton {
+    display: inline-block;
+    background: rgb(223, 125, 125);
+    border-radius: 5px;
+    border: 1px solid rgb(223, 125, 125);
+    padding: 10px;
+    font-weight: bold;
+}
+
+#convertButton:hover {
+    background: rgb(86, 240, 120);
+    border-radius: 5px;
+    border: 1px solid rgb(86, 240, 120);
+}
+
+
+
+/* #gallery {
+    margin-top: 10px;
+}
+#gallery img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}*/
+

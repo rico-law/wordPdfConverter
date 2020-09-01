@@ -1,0 +1,19 @@
+{
+  "name": "wordPdfConverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^9.2.1",
+    "electron-util": "^0.14.2"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

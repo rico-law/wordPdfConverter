@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <script src="utils.js" defer></script>
+    <script src="convert.js" defer></script>
+    <script src="fileHandler.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+
+
+    <div id="heading">
+      <h1>Welcome to my file converter!</h1>
+    </div>
+
+    <div id="drop-area">
+      <form class="my-form">
+        <input type="file" id="fileElem" multiple accept=".doc, .docx" onchange="handleFiles(this.files)">
+        <div class="infoWrapper">
+          <p>Drag your files to this box to be converted here!</p>
+        </div>
+
+        <div class="buttonWrapper">
+          <label class="button" for="fileElem">
+            CHOOSE FILES
+          </label>
+        </div>
+
+
+      </form>
+    </div>
+
+    <div id="convertButtonWrapper">
+      <button id="convertButton">
+        CONVERT FILES
+      </button>
+    </div>
+
+
+  </body>
+</html>

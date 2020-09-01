@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>File Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menuBar">
+            <div class="leftSide">
+                <div class="buttonWrapper">
+                    <button class="button">File</button>
+                    <div class="dropDownMenuContent">
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                    </div>
+                </div>
+
+                <div class="buttonWrapper">
+                    <button class="button">Edit</button>
+                    <div class="dropDownMenuContent">
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonWrapper">
+                <button class="button">Close</button>
+                <div class="dropDownMenuContent">
+                    <a href="#">link5</a>
+                    <a href="#">link6</a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="welcome">Welcome to my Converter!</h1>
+
+        <div class="dropAreaWrapper">
+            <div id="dropArea">
+                <input id="fileSelect" type="file" multiple accept=".doc, .docx" onchange="handleFiles(this.files)">
+                <div class="dropCentre">
+                    <img class="uploadIcon" src="../assets/uploadIcon.svg"></svg>
+                    <div class="infoWrapper">
+                        <div id="info">
+                            <p>Drag your files in to convert them or</p>
+                            <label id="chooseFile" for="fileSelect">&nbsp;Choose a file</label>
+                            <p id="chooseFileClickedText">&nbsp;Choose a file</p>
+                        </div>
+
+                        <div id="afterUpload">
+                            <!-- <button id="convertButton"></button> -->
+                            <p>Done uploading?</p>
+                            <label id="convertFiles">&nbsp;Convert your files</label>
+                            <p id="convertFilesClickedText">&nbsp;Convert your files</p>
+                            <p>&nbsp;or&nbsp;</p>
+                            <label id="chooseFileAgain" for="fileSelect">upload more files</label>
+                            <p id="chooseFileAgainClickedText">upload more files</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalWrapper">
+            <div class="modal">
+                <div class="header">
+                    <span id="closeButton">&times;</span>
+                    <h3>Converting Your Files...</h3>
+                </div>
+                <div class="loaderWrapper">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="utils.js" async defer></script>
+    <script src="convert.js" async defer></script>
+    <script src="fileHandler.js" async defer></script>
+    <script src="index.js" async defer></script>
+</body>
+
+</html>

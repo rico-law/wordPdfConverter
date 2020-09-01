@@ -1,0 +1,104 @@
+body {
+    font-family: "Alata", sans-serif;
+    margin: 0px;
+    /* background-color: rgb(238, 229, 229); */
+}
+
+.topBarWrapper {
+    -webkit-app-region: drag;
+    background-color: rgb(236, 77, 77);
+    height: 100%;
+    position: relative;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+#topBarText {
+    color: white;
+    user-select: none;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.closeButtonWrapper {
+    padding-right: 20px;
+}
+
+#closeButton {
+    font: normal 1em/1 Arial, small-caption;
+    color: white;
+    background-color: rgb(236, 77, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+    -webkit-app-region: no-drag;
+    outline: none;
+}
+
+.infoTextWrapper {
+    display: flex;
+    height: 45vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#infoText {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 18px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+    user-select: none;
+}
+
+.bottomBarWrapper {
+    padding-right: 40px;
+    /* padding-top: 5vh; */
+    display: block;
+    text-align: end;
+}
+
+.noWrapper {
+    float: right;
+}
+
+#noButton {
+    height: 30px;
+    outline: none;
+    border: grey;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#noButton:hover {
+    color: #53dfdf;
+}
+
+.yesWrapper {
+    float: right;
+    padding-right: 10px;
+}
+
+#yesButton {
+    height: 30px;
+    outline: none;
+    border: grey;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#yesButton:hover {
+    color: #53dfdf;
+}
